@@ -1,15 +1,15 @@
 # if it's hot
-    # It's a hot day
-    # Drink plenty of water
+# It's a hot day
+# Drink plenty of water
 
 # Otherwise if it's cold
-    # It's a cold day
-    # Wear warm clothes
+# It's a cold day
+# Wear warm clothes
 
 # Otherwise
-    # It's a lovely day
+# It's a lovely day
 
-is_hot =  True
+is_hot = True
 is_cold = False
 
 if is_hot:
