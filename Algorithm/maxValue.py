@@ -17,9 +17,9 @@ def find_max_index(b):
 
 
 def min_value(c):
-
+    n = len(c)
     min_v = c[0]
-    for k in c:
+    for k in range(1, n):
         if c[k] < min_v:
             min_v = c[k]
     return min_v
