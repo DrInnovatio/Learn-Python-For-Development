@@ -1,19 +1,22 @@
 def merge_sort(a):
     n = len(a)
+    # If there is only one data, this def doesn't work any more.
 
     if n <= 1:
         return
 
+    # Separating the array into two groups.
     mid = n // 2
     group1 = a[:mid]
     group2 = a[mid:]
 
+    # In the recursive calls, organizing the two groups.
     merge_sort(group1)
     merge_sort(group2)
 
+    # Merging the two groups into one.
     i1 = 0
     i2 = 0
-
     ia = 0
 
     while i1 < len(group1) and i2 < len(group2):
@@ -25,6 +28,8 @@ def merge_sort(a):
             a[ia] = group2[i2]
             i2 += 1
             ia += 1
+
+    # Adding the rest of data to create the result
 
     while i1 < len(group1):
         a[ia] = group1[i1]
